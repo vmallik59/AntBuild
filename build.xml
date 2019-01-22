@@ -37,7 +37,7 @@
       <fileset dir="src"/>
     </javadoc>
   </target>
-  <target name="findbugs">
+  <!--<target name="findbugs">
     <taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask">
       <classpath>
         <pathelement path="lib/findbugs/lib/findbugs.jar"/>
@@ -47,7 +47,7 @@
       <sourcePath path="src"/>
       <class location="build/classes"/>
     </findbugs>
-  </target>
+  </target>-->
   <target name="clean">
     <delete dir="build"/>
   </target>
