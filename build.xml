@@ -13,7 +13,6 @@
     <mkdir dir="build/test-classes"/>
     <javac srcdir="." includes="**/*Test.java" destdir="build/test-classes" debug="on">
       <classpath>
-        <pathelement path="build/test-classes"/>
         <pathelement path="build/classes"/>
         <fileset dir="lib" includes="*.jar"/>
       </classpath>
