@@ -1,4 +1,4 @@
-import junit.framework.*;
+package folder1.junit; import junit.framework.*;
 
 public class Folder1JunitTest extends TestCase {
     public void test3() {

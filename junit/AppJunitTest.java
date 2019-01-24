@@ -1,4 +1,4 @@
-import junit.framework.*;
+package junit; import junit.framework.*;
 
 public class AppJunitTest extends TestCase {
     public void test1() {
