@@ -11,8 +11,9 @@
   </target>
   <target name="test" depends="compile">
     <mkdir dir="build/test-classes"/>
-    <javac srcdir="test" includes="**/*Test.java" destdir="build/test-classes" debug="on">
+    <javac srcdir="." includes="**/*Test.java" destdir="build/test-classes" debug="on">
       <classpath>
+        <pathelement path="build/test-classes"/>
         <pathelement path="build/classes"/>
         <fileset dir="lib" includes="*.jar"/>
       </classpath>
@@ -27,7 +28,7 @@
       </classpath>
       <formatter type="xml"/>
       <batchtest todir="build/test-reports">
-        <fileset dir="test" includes="**/*Test.java"/>
+        <fileset dir="." includes="**/*Test.java"/>
       </batchtest>
     </junit>
   </target>
