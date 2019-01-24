@@ -19,7 +19,7 @@
     </javac>
 
     <mkdir dir="build/test-reports"/>
-   <!-- <junit printsummary="true">
+    <junit printsummary="true">
       <classpath>
         <pathelement path="build/test-classes"/>
         <pathelement path="build/classes"/>
@@ -27,9 +27,9 @@
       </classpath>
       <formatter type="xml"/>
       <batchtest todir="build/test-reports">
-        <fileset dir="." includes="**/*Test.java"/>
+        <fileset dir="." includes="**/*Test.class"/>
       </batchtest>
-    </junit>-->
+    </junit>
   </target>
   <target name="javadoc">
     <mkdir dir="build/javadoc"/>
