@@ -9,7 +9,7 @@
       <fileset dir="build/classes"/>
     </jar>
   </target>
-  <!--<target name="test" depends="compile">
+  <target name="test" depends="compile">
     <mkdir dir="build/test-classes"/>
     <javac srcdir="test" destdir="build/test-classes" debug="on">
       <classpath>
@@ -30,7 +30,7 @@
         <fileset dir="test" includes="**/*Test.java"/>
       </batchtest>
     </junit>
-  </target>-->
+  </target>
   <target name="javadoc">
     <mkdir dir="build/javadoc"/>
     <javadoc destdir="build/javadoc">
@@ -51,5 +51,5 @@
   <target name="clean">
     <delete dir="build"/>
   </target>
-  <target name="all" depends="jar,javadoc"/>
+  <target name="all" depends="jar,test,javadoc"/>
 </project>
