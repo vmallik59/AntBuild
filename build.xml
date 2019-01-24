@@ -27,9 +27,8 @@
       </classpath>
       <formatter type="xml"/>
       <batchtest todir="build/test-reports">
-        <fileset dir="test" includes="**/*Test.java"/>
-        <fileset dir="junit" includes="**/*Test.java"/>
-      </batchtest>
+        <fileset dir="." includes="**/*Test.java"/>
+       </batchtest>
     </junit>
   </target>
   <target name="javadoc">
